@@ -1,0 +1,162 @@
+@model MdmBilling.ViewModels.BatchDetails
+
+@{
+    ViewData["Title"] = "Batch " + Model.BatchNumber;
+}
+
+<h2>Batch @Model.BatchNumber</h2>
+
+@if (TempData["Ok"] is string ok)
+{
+    <div class="alert alert-success">
+        @ok
+    </div>
+}
+
+@if (TempData["Warnings"] is string warnings)
+{
+    <div class="alert alert-warning">
+        <strong>Warnings:</strong>
+
+        <ul class="mb-0">
+            @foreach (var warning in warnings.Split(
+                Environment.NewLine,
+                StringSplitOptions.RemoveEmptyEntries))
+            {
+                <li>@warning</li>
+            }
+        </ul>
+    </div>
+}
+
+<div class="card shadow-sm mb-4">
+    <div class="card-body">
+
+        <h5 class="card-title mb-3">Batch information</h5>
+
+        <dl class="row mb-0">
+            <dt class="col-sm-3">Servers</dt>
+            <dd class="col-sm-9">@string.Join(", ", Model.ServerNames)</dd>
+
+            <dt class="col-sm-3">Batch number</dt>
+            <dd class="col-sm-9">@Model.BatchNumber</dd>
+
+            <dt class="col-sm-3">Billing date</dt>
+            <dd class="col-sm-9">
+                @(Model.BillingDate?.ToString("yyyy-MM-dd") ?? "-")
+            </dd>
+
+            <dt class="col-sm-3">Meters</dt>
+            <dd class="col-sm-9">@Model.MeterCount</dd>
+
+            <dt class="col-sm-3">File</dt>
+            <dd class="col-sm-9">@(Model.FileName ?? "-")</dd>
+
+            <dt class="col-sm-3">Uploaded</dt>
+            <dd class="col-sm-9">
+                @Model.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")
+            </dd>
+
+        </dl>
+    </div>
+</div>
+
+@* Start processing - SuperAdmin and OperationalUser only *@
+@if (User.IsInRole("SuperAdmin") || User.IsInRole("OperationalUser"))
+{
+    <form asp-action="Start" asp-route-id="@Model.Id" method="post" class="col-md-6">
+        <h4 style="margin-top:0">Select servers to check</h4>
+        <div class="form-text mb-2">Only the ticked servers are contacted.</div>
+
+        @if (Model.AllServers.Count == 0)
+        {
+            <div class="alert alert-warning">There are no active servers. Add a server first.</div>
+        }
+        else
+        {
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="allServers" />
+                <label class="form-check-label fw-semibold" for="allServers">Select all</label>
+            </div>
+            <div class="row mb-3">
+                @foreach (var s in Model.AllServers)
+                {
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input srv" type="checkbox" name="selectedServerIds" value="@s.Id"
+                                   id="srv@(s.Id)" @(Model.SelectedServerIds.Contains(s.Id) ? "checked" : "") />
+                            <label class="form-check-label" for="srv@(s.Id)">@s.Name <span
+                                class="text-muted">(@s.IpAddress)</span></label>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <button type="submit" class="btn btn-success">Start processing</button>
+            }
+        </form>
+    }
+
+    <h4>Processing runs</h4>
+
+    <div class="table-responsive">
+        <table class="table table-sm table-striped table-bordered">
+
+            <thead class="table-light">
+                <tr>
+                    <th>Run</th>
+                    <th>Queued</th>
+                    <th>Status</th>
+                    <th>Online</th>
+                    <th>Offline</th>
+                    <th>Data available</th>
+                    <th>Data missing</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @if (Model.Runs.Count == 0)
+                {
+                    <tr>
+                        <td colspan="7" class="text-center text-muted">
+                            No processing runs yet.
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var r in Model.Runs)
+                    {
+                        <tr>
+                            <td>#@r.Id</td>
+
+                            <td>
+                                @r.QueuedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")
+                            </td>
+
+                            <td>@r.Status</td>
+
+                            <td>@r.OnlineCount</td>
+
+                            <td>@r.OfflineCount</td>
+
+                            <td>@r.DataAvailableCount</td>
+
+                            <td>@r.DataMissingCount</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i>
+        Back to batches
+    </a>
+    @section Scripts {
+        <script>
+            const all = document.getElementById('allServers');
+            if (all) all.addEventListener('change', () =>
+                document.querySelectorAll('.srv').forEach(c => c.checked = all.checked));
+        </script>
+    }

@@ -1,0 +1,235 @@
+@using MdmBilling.Models
+@model MdmBilling.ViewModels.RunViewModel
+
+@{
+    var p = Model.Progress;
+
+    ViewData["Title"] = "Run #" + p.RunId;
+
+    var filter = (string?)ViewBag.Filter ?? "all";
+
+    var filters = new[]
+    {
+        ("all", "All"),
+        ("online", "Online"),
+        ("offline", "Offline"),
+        ("dataAvailable", "Data available"),
+        ("dataMissing", "Data missing"),
+        ("notFound", "Not found"),
+        ("notChecked", "Not checked"),
+        ("attention", "Needs attention")
+    };
+}
+
+@if (TempData["Error"] is string runError)
+{
+    <div class="alert alert-danger">
+        @runError
+    </div>
+}
+
+<h2>
+    Batch @p.BatchNumber
+    <small class="text-muted">run #@p.RunId</small>
+</h2>
+
+<p>
+    <a asp-action="Details" asp-route-id="@p.BatchId">
+        Back to batch
+    </a>
+</p>
+
+@if (!p.IsFinished)
+{
+    <p id="msg">
+        Status: <strong>@p.Status</strong>.
+        @p.ServersDone of @p.ServersTotal servers done.
+    </p>
+
+    <div class="progress mb-3">
+        <div id="bar" class="progress-bar" role="progressbar" style="width: @(p.Percent)%" aria-valuenow="@p.Percent"
+             aria-valuemin="0" aria-valuemax="100">
+            @p.Percent%
+        </div>
+    </div>
+}
+else
+{
+    <p>
+        Status: <strong>@p.Status</strong>.
+        Servers checked: @p.ServersTotal,
+        failed: @p.ServersFailed.
+    </p>
+
+    @* Download reports *@
+    @if (p.Status is RunStatus.Completed or RunStatus.CompletedWithErrors)
+    {
+        <div class="mb-3">
+            <a class="btn btn-outline-success btn-sm" asp-controller="Reports" asp-action="Download" asp-route-runId="@p.RunId"
+               asp-route-format="Excel">
+                Download Excel
+            </a>
+
+            <a class="btn btn-outline-danger btn-sm" asp-controller="Reports" asp-action="Download" asp-route-runId="@p.RunId"
+               asp-route-format="Pdf">
+                Download PDF
+            </a>
+        </div>
+    }
+
+    @* Run statistics *@
+    <div class="table-responsive">
+        <table class="table table-sm table-bordered w-auto">
+            <tbody>
+                <tr>
+                    <td>Total meters</td>
+                    <td>@p.TotalMeters</td>
+
+                    <td class="ps-4">Online</td>
+                    <td>@p.OnlineCount</td>
+
+                    <td class="ps-4">Offline</td>
+                    <td>@p.OfflineCount</td>
+                </tr>
+
+                <tr>
+                    <td>Data available</td>
+                    <td>@p.DataAvailableCount</td>
+
+                    <td class="ps-4">Data missing</td>
+                    <td>@p.DataMissingCount</td>
+
+                    <td class="ps-4">Not found / not checked</td>
+                    <td>@p.NotFoundCount / @p.NotCheckedCount</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    @* Meter filters *@
+    <div class="mb-3 d-flex flex-wrap gap-2">
+        @foreach (var (key, label) in filters)
+        {
+            <a class="btn btn-sm @(filter == key ? "btn-primary" : "btn-outline-primary")" asp-action="Run"
+               asp-route-id="@p.RunId" asp-route-filter="@key">
+                @label
+            </a>
+        }
+    </div>
+
+    @* Meter results *@
+    <div class="table-responsive">
+        <table class="table table-sm table-striped table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th>Meter</th>
+                    <th>Group</th>
+                    <th>Server</th>
+                    <th>Online</th>
+                    <th>Daily data</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @if (Model.Results?.Items == null || !Model.Results.Items.Any())
+                {
+                    <tr>
+                        <td colspan="6" class="text-center text-muted">
+                            No meter results found for this filter.
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var r in Model.Results.Items)
+                    {
+                        <tr>
+                            <td>@r.MeterNumber</td>
+                            <td>@r.GroupName</td>
+                            <td>@r.ServerName</td>
+                            <td>@r.OnlineText</td>
+                            <td>@r.DataText</td>
+                            <td>@(r.MissingDetails ?? r.Remarks)</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @* Pagination *@
+    @if (Model.Results != null)
+    {
+        <div class="d-flex flex-wrap gap-2 align-items-center">
+
+            @if (Model.Results.Page > 1)
+            {
+                <a class="btn btn-sm btn-outline-secondary" asp-action="Run" asp-route-id="@p.RunId" asp-route-filter="@filter"
+                   asp-route-page="@(Model.Results.Page - 1)">
+                    Previous
+                </a>
+            }
+
+            <span>
+                Page @Model.Results.Page of @Model.Results.TotalPages
+                (@Model.Results.TotalCount meters)
+            </span>
+
+            @if (Model.Results.Page < Model.Results.TotalPages)
+            {
+                <a class="btn btn-sm btn-outline-secondary" asp-action="Run" asp-route-id="@p.RunId" asp-route-filter="@filter"
+                   asp-route-page="@(Model.Results.Page + 1)">
+                    Next
+                </a>
+            }
+
+        </div>
+    }
+}
+
+@section Scripts {
+    @if (!p.IsFinished)
+    {
+        <script>
+            const url = '@Url.Action("RunProgress", new { id = p.RunId })';
+
+            const timer = setInterval(async () => {
+                try {
+                    const response = await fetch(url);
+
+                    if (!response.ok) {
+                        return;
+                    }
+
+                    const data = await response.json();
+
+                    const bar = document.getElementById('bar');
+
+                    if (bar) {
+                        bar.style.width = data.percent + '%';
+                        bar.textContent = data.percent + '%';
+                        bar.setAttribute('aria-valuenow', data.percent);
+                    }
+
+                    const message = document.getElementById('msg');
+
+                    if (message) {
+                        message.textContent =
+                            'Status: ' + data.status + '. ' +
+                            data.serversDone + ' of ' +
+                            data.serversTotal + ' servers done.';
+                    }
+
+                    if (data.isFinished) {
+                        clearInterval(timer);
+                        location.reload();
+                    }
+                }
+                catch (error) {
+                    console.error('Error fetching run progress:', error);
+                }
+            }, 3000);
+        </script>
+    }
+}

@@ -1,0 +1,43 @@
+@model MdmBilling.ViewModels.PagedResult<MdmBilling.ViewModels.ErrorRow>
+@{ ViewData["Title"] = "Error log"; }
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>Error log</h2>
+  <div>
+    <a class="btn btn-sm btn-outline-primary" asp-action="Audit">Audit log</a>
+    <a class="btn btn-sm btn-primary" asp-action="Errors">Error log</a>
+  </div>
+</div>
+
+<table class="table table-sm">
+  <thead>
+    <tr><th>Time</th><th>Run</th><th>Server</th><th>Message</th></tr>
+  </thead>
+  <tbody>
+  @foreach (var r in Model.Items)
+  {
+    <tr>
+      <td>@r.Time.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</td>
+      <td>@r.RunId</td>
+      <td>@r.Server</td>
+      <td>@r.Message</td>
+    </tr>
+  }
+  @if (Model.Items.Count == 0)
+  {
+    <tr><td colspan="4" class="text-center text-muted">No errors logged.</td></tr>
+  }
+  </tbody>
+</table>
+
+<div class="d-flex gap-2 align-items-center">
+  @if (Model.Page > 1)
+  {
+    <a class="btn btn-sm btn-outline-secondary" asp-action="Errors" asp-route-page="@(Model.Page - 1)">Previous</a>
+  }
+  <span>Page @Model.Page of @Model.TotalPages (@Model.TotalCount entries)</span>
+  @if (Model.Page < Model.TotalPages)
+  {
+    <a class="btn btn-sm btn-outline-secondary" asp-action="Errors" asp-route-page="@(Model.Page + 1)">Next</a>
+  }
+</div>

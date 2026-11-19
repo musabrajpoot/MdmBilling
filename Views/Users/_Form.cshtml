@@ -1,0 +1,16 @@
+@model MdmBilling.ViewModels.UserFormModel
+<input type="hidden" asp-for="Id" />
+<div class="mb-3"><label asp-for="FullName" class="form-label"></label><input asp-for="FullName"
+                                                                                  class="form-control" /><span asp-validation-for="FullName" class="text-danger"></span></div>
+    <div class="mb-3"><label asp-for="Email" class="form-label"></label><input asp-for="Email" class="form-control"
+                                                                                   readonly="@(Model.Id != null)" /><span asp-validation-for="Email" class="text-danger"></span></div>
+        <div class="mb-3"><label asp-for="Office" class="form-label"></label><input asp-for="Office" class="form-control" />
+        </div>
+        <div class="mb-3"><label asp-for="Phone" class="form-label"></label><input asp-for="Phone" class="form-control" /><span
+            asp-validation-for="Phone" class="text-danger"></span></div>
+            <div class="mb-3"><label asp-for="Role" class="form-label"></label><select asp-for="Role"
+                                                                                       asp-items="(SelectList)ViewBag.Roles" class="form-select">
+            </select></div>
+            <div class="form-check mb-3"><input asp-for="CanDownloadReports" class="formcheck-input" /><label
+                asp-for="CanDownloadReports" class="form-check-label">
+            </label></div>

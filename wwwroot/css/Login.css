@@ -1,0 +1,125 @@
+/* wwwroot/css/login.css
+   Styles for the Login page, using your existing Bootstrap markup.
+   Everything is scoped under .login-page, so other pages are not affected. */
+
+:root {
+  --mdm-red: #d91c23;
+  --mdm-red-dark: #b3141b;
+  --mdm-red-light: #fdecec;
+  --mdm-ink: #101828;
+  --mdm-muted: #667085;
+  --mdm-line: #e4e7ec;
+}
+
+/* Page background (only when the login page is open) */
+body:has(.login-page) {
+  background: linear-gradient(135deg, #ffffff, #fff1f1);
+  min-height: 100vh;
+}
+
+/* The outer row: push the card down a little */
+.login-page {
+  padding-top: 8vh;
+}
+
+/* The card (your col-md-4) */
+.login-page > .col-md-4 {
+  flex: 0 0 auto;
+  width: 460px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+  border-top: 6px solid var(--mdm-red);
+  box-shadow: 0 24px 60px rgba(217, 28, 35, 0.12);
+}
+
+/* Title */
+.login-page h2 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--mdm-ink);
+  margin-bottom: 24px !important;
+}
+
+/* Labels */
+.login-page .form-label {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--mdm-ink);
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.login-page .form-control {
+  border: 1px solid var(--mdm-line);
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.login-page .form-control:focus {
+  border-color: var(--mdm-red);
+  box-shadow: 0 0 0 3px rgba(217, 28, 35, 0.15);
+}
+
+/* Validation messages */
+.login-page .text-danger {
+  color: var(--mdm-red-dark) !important;
+  font-size: 12px;
+}
+
+.login-page .input-validation-error {
+  border-color: var(--mdm-red);
+  background: #fffafa;
+}
+
+.login-page .validation-summary-errors {
+  background: var(--mdm-red-light);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.login-page .validation-summary-errors ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* Remember me */
+.login-page .form-check-input:checked {
+  background-color: var(--mdm-red);
+  border-color: var(--mdm-red);
+}
+
+.login-page .form-check-input:focus {
+  border-color: var(--mdm-red);
+  box-shadow: 0 0 0 3px rgba(217, 28, 35, 0.15);
+}
+
+.login-page .form-check-label {
+  color: var(--mdm-muted);
+}
+
+/* Sign in button (overrides Bootstrap's blue) */
+.login-page .btn-primary {
+  --bs-btn-bg: var(--mdm-red);
+  --bs-btn-border-color: var(--mdm-red);
+  --bs-btn-hover-bg: var(--mdm-red-dark);
+  --bs-btn-hover-border-color: var(--mdm-red-dark);
+  --bs-btn-active-bg: var(--mdm-red-dark);
+  --bs-btn-active-border-color: var(--mdm-red-dark);
+  --bs-btn-focus-shadow-rgb: 217, 28, 35;
+  border-radius: 12px;
+  padding: 13px 26px;
+  font-weight: 600;
+}
+
+/* Small screens */
+@media (max-width: 575px) {
+  .login-page > .col-md-4 {
+    padding: 28px 22px;
+  }
+}

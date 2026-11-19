@@ -1,0 +1,29 @@
+
+@model MdmBilling.ViewModels.ServerFormModel
+
+@{
+    ViewData["Title"] = "Edit server";
+}
+
+<h2 class="mb-3">Edit server</h2>
+
+<form asp-action="Edit" method="post" class="col-md-6">
+
+    <div asp-validation-summary="ModelOnly"
+         class="text-danger mb-3">
+    </div>
+
+    <partial name="_Form" model="Model" />
+
+    <button type="submit" class="btn btn-primary">
+        Save
+    </button>
+
+    <a asp-action="Index" class="btn btn-link">
+        Cancel
+    </a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,213 @@
+﻿
+@inject IConfiguration Config
+
+@{
+    var auth = User.Identity?.IsAuthenticated == true;
+
+    var ctrl = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+
+    string Act(string c) =>
+        ctrl.Equals(c, StringComparison.OrdinalIgnoreCase) ? " active" : "";
+
+    var name = User.Identity?.Name ?? "";
+
+    var initial = name.Length > 0
+        ? name.Substring(0, 1).ToUpper()
+        : "U";
+
+    var role = User.IsInRole("SuperAdmin") ? "Super Admin"
+             : User.IsInRole("OperationalUser") ? "Operational User"
+             : User.IsInRole("ReportViewer") ? "Report Viewer"
+             : User.IsInRole("Auditor") ? "Auditor"
+             : "User";
+
+    var isAdmin = User.IsInRole("SuperAdmin");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - MDM Billing Monitor</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet" />
+
+    <link rel="stylesheet"
+          href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+
+    <link rel="stylesheet"
+          href="~/MdmBilling.styles.css"
+          asp-append-version="true" />
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+
+<body class="@(auth ? "app" : "")">
+
+    @* Fake data warning *@
+    @if (Config.GetValue<bool>("Udil:UseFake"))
+    {
+        <div class="alert alert-warning rounded-0 text-center mb-0 py-1">
+            TEST DATA MODE: results are fake and must not be used for billing.
+        </div>
+    }
+
+    @* Sidebar: authenticated users only *@
+    @if (auth)
+    {
+        <aside class="sidebar" id="sidebar">
+
+            <div class="brand">
+                <span class="brand-mark">&#9889;</span>
+
+                <div>
+                    <strong>MDM Monitor</strong>
+                    <small>Batch billing</small>
+                </div>
+            </div>
+
+            <nav class="side-nav">
+
+                <span class="side-label">WORKSPACE</span>
+
+                <a class="side-link@(Act("Home"))"
+                   asp-controller="Home"
+                   asp-action="Index">
+                    <i>&#9638;</i>Dashboard
+                </a>
+
+                <a class="side-link@(Act("Batches"))"
+                   asp-controller="Batches"
+                   asp-action="Index">
+                    <i>&#9776;</i>Batches
+                </a>
+
+                @if (isAdmin)
+                {
+                    <span class="side-label" style="margin-top:14px">
+                        ADMINISTRATION
+                    </span>
+
+                    <a class="side-link@(Act("Servers"))"
+                       asp-controller="Servers"
+                       asp-action="Index">
+                        <i>&#9636;</i>Servers
+                    </a>
+
+                    <a class="side-link@(Act("Users"))"
+                       asp-controller="Users"
+                       asp-action="Index">
+                        <i>&#9786;</i>Users
+                    </a>
+                }
+
+                @if (isAdmin || User.IsInRole("Auditor"))
+                {
+                    <span class="side-label" style="margin-top:14px">
+                        LOGS
+                    </span>
+
+                    <a class="side-link@(Act("Logs"))"
+                       asp-controller="Logs"
+                       asp-action="Audit">
+                        <i>&#9998;</i>Audit and error logs
+                    </a>
+                }
+
+            </nav>
+
+            <div class="side-status">
+                <strong>
+                    <span class="dot"></span>System online
+                </strong>
+                Secure connection
+            </div>
+
+        </aside>
+    }
+
+    @* Main application shell *@
+    <div class="@(auth ? "shell" : "")">
+
+        @* Top navigation: authenticated users only *@
+        @if (auth)
+        {
+            <header class="topbar">
+
+                <div class="topbar-left">
+
+                    <button type="button"
+                            class="menu-btn"
+                            id="menuBtn"
+                            aria-label="Menu">
+                        &#9776;
+                    </button>
+
+                    <div>
+                        <small>HOME</small>
+                        <h1>@ViewData["Title"]</h1>
+                    </div>
+
+                </div>
+
+                <div class="user-chip">
+
+                    <div class="avatar">@initial</div>
+
+                    <div>
+                        <b>@name</b>
+                        <small>@role</small>
+                    </div>
+
+                    <form asp-controller="Account"
+                          asp-action="Logout"
+                          method="post"
+                          class="d-inline">
+
+                        <button type="submit" class="logout-btn">
+                            Logout
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </header>
+        }
+
+        @* Page content *@
+        <main class="@(auth ? "content" : "")">
+            @RenderBody()
+        </main>
+
+    </div>
+
+    @* JavaScript files *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @if (auth)
+    {
+        <script>
+            document.getElementById('menuBtn')?.addEventListener('click', function () {
+                document.getElementById('sidebar')?.classList.toggle('open');
+            });
+        </script>
+    }
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

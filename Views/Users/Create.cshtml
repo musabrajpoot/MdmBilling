@@ -1,0 +1,14 @@
+@model MdmBilling.ViewModels.UserFormModel
+@{
+    ViewData["Title"] = "Add user";
+}
+<h2>Add user</h2>
+<form asp-action="Create" method="post" class="col-md-6">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <partial name="_Form" model="Model" />
+    <button type="submit" class="btn btn-primary">Create user</button>
+    <a asp-action="Index" class="btn btn-link">Cancel</a>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

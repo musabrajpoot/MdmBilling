@@ -1,0 +1,101 @@
+@* @model MdmBilling.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_Layout";
+}
+<div class="row justify-content-center">
+<div class="col-md-4">
+<h2 class="mb-3">Login</h2>
+<form asp-action="Login" asp-route-returnUrl="@ViewData["ReturnUrl"]"
+method="post">
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="mb-3"><label asp-for="Email" class="form-label"></label>
+<input asp-for="Email" class="form-control" /><span asp-validationfor="Email" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Password" class="form-label"></label>
+<input asp-for="Password" class="form-control" /><span asp-validationfor="Password" class="text-danger"></span></div>
+<div class="form-check mb-3"><input asp-for="RememberMe" class="formcheck-input" /><label asp-for="RememberMe" class="form-check-label"></label>
+</div>
+<button type="submit" class="btn btn-primary w-100">Sign in</button>
+</form>
+</div>
+</div>
+@section Styles {
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+} *@
+
+
+
+
+@model MdmBilling.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/auth.css" asp-append-version="true" />
+}
+
+<div class="auth-split">
+
+    <!-- Left: brand panel -->
+    <div class="auth-hero">
+        <small class="auth-kicker">SMART METERING NETWORK</small>
+        <div>
+            <div class="auth-chips">
+                <span class="auth-chip">&#9889; GRID STATION</span>
+                <span class="auth-chip">&#9636; MDM</span>
+                <span class="auth-chip">&#9684; SMART METERS</span>
+            </div>
+            <small class="auth-kicker">BATCH BILLING OPERATIONS</small>
+            <h1>Check every meter before the bill is made.</h1>
+            <p>Upload a batch, check only the servers you select, and see which meters are online and which have daily data, all in one place.</p>
+        </div>
+    </div>
+
+    <!-- Right: login card -->
+    <div class="auth-side">
+        <div class="auth-card">
+            <div class="auth-logo"><i>&#9889;</i> MDM Monitor</div>
+
+            <div class="auth-eyebrow">Meter data management</div>
+            <h2>Billing Monitor</h2>
+            <p class="auth-sub">Access the system using your credentials</p>
+
+            <form asp-action="Login" asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post" novalidate>
+                <div asp-validation-summary="ModelOnly" class="auth-error"></div>
+
+                <label asp-for="Email" class="auth-label"></label>
+                <input asp-for="Email" class="auth-field" placeholder="name@company.com" autocomplete="username" autofocus />
+                <span asp-validation-for="Email" class="auth-invalid"></span>
+
+                <label asp-for="Password" class="auth-label"></label>
+                <div class="auth-pw">
+                    <input asp-for="Password" class="auth-field" placeholder="Your password" autocomplete="current-password" />
+                    <button type="button" id="togglePw" aria-label="Show or hide password">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </button>
+                </div>
+                <span asp-validation-for="Password" class="auth-invalid"></span>
+
+                <div class="auth-remember">
+                    <input asp-for="RememberMe" />
+                    <label asp-for="RememberMe"></label>
+                </div>
+
+                <button type="submit" class="auth-btn">Login</button>
+            </form>
+        </div>
+        <div class="auth-foot">&copy; 2026 Meter Operations &middot; Authorized access only</div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById('togglePw').addEventListener('click', function () {
+            var f = document.getElementById('Password');
+            f.type = f.type === 'password' ? 'text' : 'password';
+        });
+    </script>
+}

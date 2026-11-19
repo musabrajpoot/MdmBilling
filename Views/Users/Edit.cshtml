@@ -1,0 +1,198 @@
+
+@model MdmBilling.ViewModels.UserFormModel
+
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<div class="container-fluid px-0">
+
+    <!-- Page Header -->
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold mb-1">Edit User</h2>
+            <p class="text-muted mb-0">
+                Update user information, role and permissions.
+            </p>
+        </div>
+
+        <a asp-controller="Users"
+           asp-action="Index"
+           class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left me-1"></i>
+            Back to Users
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-xl-8 col-xxl-7">
+
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white py-3">
+                    <h5 class="mb-0 fw-semibold">
+                        <i class="bi bi-person-gear me-2"></i>
+                        User Information
+                    </h5>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <form asp-controller="Users"
+                          asp-action="Edit"
+                          method="post">
+
+                        @Html.AntiForgeryToken()
+
+                        <input asp-for="Id" type="hidden" />
+
+                        <div asp-validation-summary="ModelOnly"
+                             class="alert alert-danger"
+                             role="alert">
+                        </div>
+
+                        <!-- Full Name -->
+                        <div class="mb-3">
+                            <label asp-for="FullName"
+                                   class="form-label fw-semibold">
+                                Full Name
+                            </label>
+
+                            <input asp-for="FullName"
+                                   class="form-control"
+                                   placeholder="Enter full name" />
+
+                            <span asp-validation-for="FullName"
+                                  class="text-danger small">
+                            </span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label asp-for="Email"
+                                   class="form-label fw-semibold">
+                                Email Address
+                            </label>
+
+                            <input asp-for="Email"
+                                   class="form-control"
+                                   type="email"
+                                   readonly />
+
+                            <div class="form-text">
+                                Email is used as the login username and cannot
+                                be changed from this page.
+                            </div>
+
+                            <span asp-validation-for="Email"
+                                  class="text-danger small">
+                            </span>
+                        </div>
+
+                        <div class="row">
+                            <!-- Office -->
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Office"
+                                       class="form-label fw-semibold">
+                                    Office
+                                </label>
+
+                                <input asp-for="Office"
+                                       class="form-control"
+                                       placeholder="Enter office name" />
+
+                                <span asp-validation-for="Office"
+                                      class="text-danger small">
+                                </span>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Phone"
+                                       class="form-label fw-semibold">
+                                    Phone Number
+                                </label>
+
+                                <input asp-for="Phone"
+                                       class="form-control"
+                                       placeholder="Enter phone number" />
+
+                                <span asp-validation-for="Phone"
+                                      class="text-danger small">
+                                </span>
+                            </div>
+                        </div>
+
+                        <hr class="my-4" />
+
+                        <!-- Role -->
+                        <div class="mb-4">
+                            <label asp-for="Role"
+                                   class="form-label fw-semibold">
+                                User Role
+                            </label>
+
+                            <select asp-for="Role"
+                                    asp-items="ViewBag.Roles"
+                                    class="form-select">
+                                <option value="">-- Select User Role --</option>
+                            </select>
+
+                            <span asp-validation-for="Role"
+                                  class="text-danger small">
+                            </span>
+
+                            <div class="form-text">
+                                Changing a user's role changes the permissions
+                                available to that account.
+                            </div>
+                        </div>
+
+                        <!-- Report Download Permission -->
+                        <div class="border rounded-3 p-3 mb-4">
+                            <div class="form-check form-switch">
+                                <input asp-for="CanDownloadReports"
+                                       class="form-check-input"
+                                       type="checkbox"
+                                       role="switch" />
+
+                                <label asp-for="CanDownloadReports"
+                                       class="form-check-label fw-semibold">
+                                    Allow Report Downloads
+                                </label>
+                            </div>
+
+                            <div class="form-text ms-4">
+                                Enable this permission if the user is allowed
+                                to download billing reports.
+                            </div>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="d-flex flex-wrap gap-2 justify-content-end">
+
+                            <a asp-controller="Users"
+                               asp-action="Index"
+                               class="btn btn-light border">
+                                Cancel
+                            </a>
+
+                            <button type="submit"
+                                    class="btn btn-primary px-4">
+                                <i class="bi bi-check-circle me-1"></i>
+                                Save Changes
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

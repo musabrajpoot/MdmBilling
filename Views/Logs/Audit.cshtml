@@ -1,0 +1,45 @@
+@model MdmBilling.ViewModels.PagedResult<MdmBilling.ViewModels.AuditRow>
+@{ ViewData["Title"] = "Audit log"; }
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>Audit log</h2>
+  <div>
+    <a class="btn btn-sm btn-primary" asp-action="Audit">Audit log</a>
+    <a class="btn btn-sm btn-outline-primary" asp-action="Errors">Error log</a>
+  </div>
+</div>
+
+<table class="table table-sm">
+  <thead>
+    <tr><th>Time</th><th>User</th><th>Action</th><th>Entity</th><th>Id</th><th>IP address</th></tr>
+  </thead>
+  <tbody>
+  @foreach (var r in Model.Items)
+  {
+    <tr>
+      <td>@r.Time.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</td>
+      <td>@r.User</td>
+      <td>@r.Action</td>
+      <td>@r.Entity</td>
+      <td>@r.EntityId</td>
+      <td>@r.Ip</td>
+    </tr>
+  }
+  @if (Model.Items.Count == 0)
+  {
+    <tr><td colspan="6" class="text-center text-muted">No entries yet.</td></tr>
+  }
+  </tbody>
+</table>
+
+<div class="d-flex gap-2 align-items-center">
+  @if (Model.Page > 1)
+  {
+    <a class="btn btn-sm btn-outline-secondary" asp-action="Audit" asp-route-page="@(Model.Page - 1)">Previous</a>
+  }
+  <span>Page @Model.Page of @Model.TotalPages (@Model.TotalCount entries)</span>
+  @if (Model.Page < Model.TotalPages)
+  {
+    <a class="btn btn-sm btn-outline-secondary" asp-action="Audit" asp-route-page="@(Model.Page + 1)">Next</a>
+  }
+</div>

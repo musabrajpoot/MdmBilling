@@ -1,0 +1,77 @@
+@model List<MdmBilling.ViewModels.BatchListItem>
+
+@{
+    ViewData["Title"] = "Batches";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Batches</h2>
+
+    @if (User.IsInRole("SuperAdmin") ||
+         User.IsInRole("OperationalUser"))
+    {
+        <a class="btn btn-primary" asp-action="Upload">
+            Upload batch
+        </a>
+    }
+</div>
+
+@if (TempData["Ok"] is string ok)
+{
+    <div class="alert alert-success">
+        @ok
+    </div>
+}
+
+<div class="table-responsive">
+    <table class="table table-sm table-striped table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>Batch</th>
+                <th>Billing date</th>
+                <th>Created</th>
+                <th>Meters</th>
+                <th>Latest run</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model.Count == 0)
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-muted">
+                        No batches have been uploaded yet.
+                    </td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var b in Model)
+                {
+                    <tr>
+                        <td>@b.BatchNumber</td>
+
+                        <td>
+                            @(b.BillingDate?.ToString("yyyy-MM-dd") ?? "-")
+                        </td>
+
+                        <td>@b.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+
+                        <td>@b.MeterCount</td>
+
+                        <td>
+                            @(b.LatestRunStatus?.ToString() ?? "Not processed")
+                        </td>
+
+                        <td>
+                            <a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@b.Id">
+                                Open
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

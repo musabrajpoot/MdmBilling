@@ -1,0 +1,82 @@
+@model MdmBilling.ViewModels.ServerFormModel
+
+<input type="hidden" asp-for="Id" />
+
+<div class="mb-3">
+    <label asp-for="GroupId" class="form-label"></label>
+
+    <select asp-for="GroupId" asp-items="(SelectList)ViewBag.Groups" class="form-select">
+        <option value="">No group</option>
+    </select>
+
+    <span asp-validation-for="GroupId" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="Name" class="form-label"></label>
+
+    <input asp-for="Name" class="form-control" />
+
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="IpAddress" class="form-label"></label>
+
+    <input asp-for="IpAddress" class="form-control" />
+
+    <span asp-validation-for="IpAddress" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="DbEngine" class="form-label"></label>
+
+    <input asp-for="DbEngine" class="form-control" />
+
+    <span asp-validation-for="DbEngine" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="Host" class="form-label"></label>
+
+    <input asp-for="Host" class="form-control" />
+
+    <span asp-validation-for="Host" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="Port" class="form-label"></label>
+
+    <input asp-for="Port" class="form-control" />
+
+    <span asp-validation-for="Port" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="DatabaseName" class="form-label"></label>
+
+    <input asp-for="DatabaseName" class="form-control" />
+
+    <span asp-validation-for="DatabaseName" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="Username" class="form-label"></label>
+
+    <input asp-for="Username" class="form-control" />
+
+    <span asp-validation-for="Username" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="Password" class="form-label"></label>
+
+    <input asp-for="Password" class="form-control" autocomplete="new-password" />
+
+    @if (Model.Id != 0)
+    {
+        <div class="form-text">
+            Leave blank to keep the saved password.
+        </div>
+    }
+</div>
