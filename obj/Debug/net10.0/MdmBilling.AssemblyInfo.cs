@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MdmBilling")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9883112c43497b3397508265b21a85518f0be747")]
 [assembly: System.Reflection.AssemblyProductAttribute("MdmBilling")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MdmBilling")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

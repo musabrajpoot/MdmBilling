@@ -1,8 +1,284 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using MdmBilling.Models
+@model MdmBilling.ViewModels.DashboardViewModel
+@{
+    ViewData["Title"] = "Operations Dashboard";
+    var run = Model.LatestRun;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@section Styles {
+    <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
+}
+
+@functions {
+    static string RunClass(RunStatus s) => s switch
+    {
+        RunStatus.Completed => "online",
+        RunStatus.Failed => "offline",
+        RunStatus.Interrupted => "inactive",
+        _ => "unknown"
+    };
+}
+
+<div class="dash-head">
+    <div>
+        <div class="dash-eyebrow">MDM &middot; Batch billing</div>
+        <h2>Operations Dashboard</h2>
+    </div>
+    <div class="dash-date">@DateTime.Now.ToString("dd MMM yyyy")</div>
 </div>
+
+<!-- ============ Server health ============ -->
+<section class="dash-hero">
+    <div class="dash-hero-top">
+        <div>
+            <div class="dash-eyebrow">Live server health</div>
+            <h3>Server connections at a glance</h3>
+            <p>Each active server is tested with a read-only connection. Results are kept for @Model.RefreshSeconds seconds.</p>
+        </div>
+        <div class="dash-actions">
+            <span id="lastChecked" class="dash-chip">Not checked yet</span>
+            <button id="refreshBtn" type="button" class="btn btn-outline-primary btn-sm">Refresh now</button>
+            <label class="dash-auto"><input type="checkbox" id="autoRefresh" checked /> Auto refresh &middot; @Model.RefreshSeconds sec</label>
+        </div>
+    </div>
+
+    <div id="healthAlert"></div>
+
+    <div class="dash-kpis">
+        <div class="dash-kpi"><i>&#9636;</i><div><small>SERVERS</small><strong id="kTotal">-</strong><span>registered</span></div></div>
+        <div class="dash-kpi ok"><i>&#10003;</i><div><small>ONLINE</small><strong id="kOnline">-</strong><span>connection OK</span></div></div>
+        <div class="dash-kpi bad"><i>&#10005;</i><div><small>OFFLINE</small><strong id="kOffline">-</strong><span>not reachable</span></div></div>
+        <div class="dash-kpi mute"><i>&#9208;</i><div><small>INACTIVE</small><strong id="kInactive">-</strong><span>switched off</span></div></div>
+        <div class="dash-kpi"><i>&#9889;</i><div><small>AVG LATENCY</small><strong id="kLatency">-</strong><span>online servers</span></div></div>
+    </div>
+
+    <div class="dash-map" id="serverMap"></div>
+</section>
+
+<section class="dash-card">
+    <div class="dash-card-head">
+        <div><div class="dash-eyebrow">Technical detail</div><h3>Server health table</h3></div>
+        @if (User.IsInRole("SuperAdmin"))
+        {
+            <a class="btn btn-outline-primary btn-sm" asp-controller="Servers" asp-action="Index">Manage servers</a>
+        }
+    </div>
+    <div class="table-responsive">
+        <table class="table table-sm dash-table">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Server</th>
+                    <th>Connection</th>
+                    <th>Latency</th>
+                    <th>Last run</th>
+                    <th>Runs (7 days)</th>
+                    <th>Avg run time</th>
+                    <th>Last error</th>
+                </tr>
+            </thead>
+            <tbody id="healthBody">
+                <tr><td colspan="8" class="text-center text-muted">Checking servers...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ============ Processing ============ -->
+<div class="dash-kpis four">
+    <div class="dash-kpi"><i>&#9776;</i><div><small>BATCHES</small><strong>@Model.TotalBatches</strong><span>uploaded in total</span></div></div>
+    <div class="dash-kpi"><i>&#8635;</i><div><small>ACTIVE RUNS</small><strong>@Model.ActiveRuns</strong><span>queued or running</span></div></div>
+    <div class="dash-kpi"><i>&#9638;</i><div><small>RUNS, 7 DAYS</small><strong>@Model.RunsLast7Days</strong><span>started</span></div></div>
+    <div class="dash-kpi @(Model.FailedRunsLast7Days > 0 ? "bad" : "ok")"><i>&#9888;</i><div><small>FAILED, 7 DAYS</small><strong>@Model.FailedRunsLast7Days</strong><span>runs failed</span></div></div>
+</div>
+
+<div class="dash-cols">
+    <section class="dash-card">
+        <div class="dash-card-head"><div><div class="dash-eyebrow">Latest run</div><h3>Batch results</h3></div></div>
+        @if (run is null)
+        {
+            <p class="text-muted">No batch has been processed yet.</p>
+        }
+        else
+        {
+            <p>
+                <a asp-controller="Batches" asp-action="Run" asp-route-id="@run.RunId"><strong>Batch @run.BatchNumber</strong>, run #@run.RunId</a>
+                <span class="dash-pill @RunClass(run.Status)">@run.Status</span>
+            </p>
+            <div class="dash-numbers">
+                <div><small>Meters</small><b>@run.TotalMeters</b></div>
+                <div><small>Online</small><b>@run.OnlineCount</b></div>
+                <div><small>Offline</small><b>@run.OfflineCount</b></div>
+                <div><small>Data available</small><b>@run.DataAvailableCount</b></div>
+                <div><small>Data missing</small><b>@run.DataMissingCount</b></div>
+                <div><small>Not found / not checked</small><b>@run.NotFoundCount / @run.NotCheckedCount</b></div>
+            </div>
+            <p class="sub">Servers checked: @run.ServersTotal, failed: @run.ServersFailed</p>
+        }
+    </section>
+
+    <section class="dash-card">
+        <div class="dash-card-head"><div><div class="dash-eyebrow">History</div><h3>Recent runs</h3></div>
+            <a class="btn btn-outline-primary btn-sm" asp-controller="Batches" asp-action="Index">All batches</a></div>
+        <div class="table-responsive">
+            <table class="table table-sm dash-table">
+                <thead><tr><th>Batch</th><th>Run</th><th>Meters</th><th>Online</th><th>Status</th></tr></thead>
+                <tbody>
+                @foreach (var r in Model.RecentRuns)
+                {
+                    <tr>
+                        <td>@r.BatchNumber</td>
+                        <td><a asp-controller="Batches" asp-action="Run" asp-route-id="@r.RunId">#@r.RunId</a></td>
+                        <td>@r.TotalMeters</td>
+                        <td>@r.OnlineCount</td>
+                        <td><span class="dash-pill @RunClass(r.Status)">@r.Status</span></td>
+                    </tr>
+                }
+                @if (Model.RecentRuns.Count == 0)
+                {
+                    <tr><td colspan="5" class="text-center text-muted">No runs yet.</td></tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+<section class="dash-card">
+    <div class="dash-card-head"><div><div class="dash-eyebrow">Attention</div><h3>Recent errors</h3></div>
+        @if (User.IsInRole("SuperAdmin") || User.IsInRole("Auditor"))
+        {
+            <a class="btn btn-outline-primary btn-sm" asp-controller="Logs" asp-action="Errors">Error log</a>
+        }
+    </div>
+    <div class="table-responsive">
+        <table class="table table-sm dash-table">
+            <thead><tr><th>Time</th><th>Run</th><th>Server</th><th>Message</th></tr></thead>
+            <tbody>
+            @foreach (var e in Model.RecentErrors)
+            {
+                <tr>
+                    <td>@e.Time.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>@e.RunId</td>
+                    <td>@e.Server</td>
+                    <td>@e.Message</td>
+                </tr>
+            }
+            @if (Model.RecentErrors.Count == 0)
+            {
+                <tr><td colspan="4" class="text-center text-muted">No errors. Everything looks fine.</td></tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        (function () {
+            const url = '@Url.Action("ServerHealth", "Home")';
+            const interval = @Model.RefreshSeconds * 1000;
+            const $ = id => document.getElementById(id);
+            const label = { online: 'Online', offline: 'Offline', inactive: 'Inactive', unknown: 'Unknown' };
+            let timer = null, busy = false;
+
+            const esc = s => { const d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; };
+
+            function ago(iso) {
+                if (!iso) return '-';
+                const sec = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 1000));
+                if (sec < 60) return sec + ' s ago';
+                if (sec < 3600) return Math.round(sec / 60) + ' min ago';
+                if (sec < 86400) return Math.round(sec / 3600) + ' h ago';
+                return Math.round(sec / 86400) + ' d ago';
+            }
+            function dur(ms) {
+                if (ms == null) return '-';
+                return ms < 1000 ? ms + ' ms' : (ms / 1000).toFixed(1) + ' s';
+            }
+            function latency(ms) {
+                if (ms == null) return '<span class="sub">-</span>';
+                const c = ms < 300 ? 'good' : ms < 1000 ? 'warn' : 'bad';
+                return '<span class="dash-lat ' + c + '">' + ms + ' ms</span>';
+            }
+
+            function render(d) {
+                $('kTotal').textContent = d.servers.length;
+                $('kOnline').textContent = d.online;
+                $('kOffline').textContent = d.offline;
+                $('kInactive').textContent = d.inactive;
+                $('kLatency').textContent = d.avgLatencyMs == null ? '-' : d.avgLatencyMs + ' ms';
+                $('lastChecked').textContent = 'Checked ' + new Date(d.checkedAt).toLocaleTimeString();
+
+                const down = d.servers.filter(s => s.status === 'offline');
+                $('healthAlert').innerHTML = down.length
+                    ? '<div class="alert alert-warning">&#9888; ' + down.length + ' server(s) cannot be reached: ' +
+                      down.map(s => esc(s.name)).join(', ') + '.</div>'
+                    : '';
+
+                $('serverMap').innerHTML = d.servers.map(s =>
+                    '<div class="dash-node ' + s.status + '" title="' + esc(s.host) + '">' +
+                    '<span class="dash-dot"></span><div><b>' + esc(s.name) + '</b>' +
+                    '<small>' + (s.status === 'online' ? s.latencyMs + ' ms' : label[s.status]) + '</small></div></div>'
+                ).join('') || '<div class="sub">No servers registered yet.</div>';
+
+                $('healthBody').innerHTML = d.servers.map(s => {
+                    const connection = esc(s.host) + (s.port ? ':' + s.port : '') +
+                        '<div class="sub">' + esc(s.engine) + (s.database ? ' &middot; ' + esc(s.database) : '') + '</div>';
+
+                    const lastRun = s.lastRunState
+                        ? '<span class="dash-pill ' + (s.lastRunState === 'Failed' ? 'offline' : s.lastRunState === 'Succeeded' ? 'online' : 'unknown') + '">' +
+                          esc(s.lastRunState) + '</span><div class="sub">' + ago(s.lastRunAt) + ' &middot; ' + dur(s.lastRunDurationMs) + '</div>'
+                        : '<span class="sub">No run yet</span>';
+
+                    const week = s.runs7d === 0
+                        ? '<span class="sub">-</span>'
+                        : '<b>' + (s.runs7d - s.failed7d) + '</b> ok / <b>' + s.failed7d + '</b> failed' +
+                          '<div class="dash-bar"><i style="width:' + Math.round(((s.runs7d - s.failed7d) / s.runs7d) * 100) + '%"></i></div>';
+
+                    const err = s.error || s.lastRunError || '';
+
+                    return '<tr>' +
+                        '<td><span class="dash-pill ' + s.status + '">' + label[s.status] + '</span>' +
+                        '<div class="sub">' + (s.checkedAt ? ago(s.checkedAt) : '') + '</div></td>' +
+                        '<td><strong>' + esc(s.name) + '</strong><div class="sub">' + esc(s.ipAddress) + (s.group ? ' &middot; ' + esc(s.group) : '') + '</div></td>' +
+                        '<td>' + connection + '</td>' +
+                        '<td>' + latency(s.latencyMs) + '</td>' +
+                        '<td>' + lastRun + '</td>' +
+                        '<td>' + week + '</td>' +
+                        '<td>' + dur(s.avgDurationMs) + '</td>' +
+                        '<td class="dash-err">' + esc(err) + '</td>' +
+                        '</tr>';
+                }).join('') || '<tr><td colspan="8" class="text-center text-muted">No servers registered. Add servers first.</td></tr>';
+            }
+
+            async function load(refresh) {
+                if (busy) return;
+                busy = true;
+                $('refreshBtn').disabled = true;
+                $('refreshBtn').textContent = 'Checking...';
+                try {
+                    const r = await fetch(url + '?refresh=' + (refresh ? 'true' : 'false'), { headers: { 'Accept': 'application/json' } });
+                    if (!r.ok) throw new Error('HTTP ' + r.status);
+                    render(await r.json());
+                } catch (e) {
+                    $('healthAlert').innerHTML = '<div class="alert alert-danger">Could not load the server health. ' + esc(e.message) + '</div>';
+                } finally {
+                    busy = false;
+                    $('refreshBtn').disabled = false;
+                    $('refreshBtn').textContent = 'Refresh now';
+                }
+            }
+
+            function schedule() {
+                clearInterval(timer);
+                if ($('autoRefresh').checked) timer = setInterval(() => load(false), interval);
+            }
+
+            $('refreshBtn').addEventListener('click', () => load(true));
+            $('autoRefresh').addEventListener('change', schedule);
+            load(false);
+            schedule();
+        })();
+    </script>
+}

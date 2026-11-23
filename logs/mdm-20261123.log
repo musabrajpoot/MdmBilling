@@ -1,0 +1,1449 @@
+2026-11-23 09:35:40.112 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/ - null null
+2026-11-23 09:35:40.135 +05:00 [INF] Identity.Application was not authenticated. Failure message: Ticket expired
+2026-11-23 09:35:40.136 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.Index (MdmBilling)'
+2026-11-23 09:35:40.138 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 09:35:40.142 +05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-11-23 09:35:40.144 +05:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2026-11-23 09:35:40.146 +05:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2026-11-23 09:35:40.149 +05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-11-23 09:35:40.150 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.Index (MdmBilling) in 9.0195ms
+2026-11-23 09:35:40.152 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.Index (MdmBilling)'
+2026-11-23 09:35:40.153 +05:00 [INF] HTTP GET / responded 302 in 19.2756 ms
+2026-11-23 09:35:40.156 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/ - 302 0 null 43.7765ms
+2026-11-23 09:35:40.160 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Account/Login?ReturnUrl=%2F - null null
+2026-11-23 09:35:40.165 +05:00 [INF] Identity.Application was not authenticated. Failure message: Ticket expired
+2026-11-23 09:35:40.166 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.AccountController.Login (MdmBilling)'
+2026-11-23 09:35:40.168 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller MdmBilling.Controllers.AccountController (MdmBilling).
+2026-11-23 09:35:40.172 +05:00 [INF] Executing ViewResult, running view Login.
+2026-11-23 09:35:40.176 +05:00 [INF] Executed ViewResult - view Login executed in 5.3175ms.
+2026-11-23 09:35:40.178 +05:00 [INF] Executed action MdmBilling.Controllers.AccountController.Login (MdmBilling) in 7.7072ms
+2026-11-23 09:35:40.180 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.AccountController.Login (MdmBilling)'
+2026-11-23 09:35:40.181 +05:00 [INF] HTTP GET /Account/Login responded 200 in 16.8690 ms
+2026-11-23 09:35:40.184 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 24.2807ms
+2026-11-23 09:35:40.224 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-11-23 09:35:40.225 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/css/site.css?v=cIpxOFJa3hoplkD28SwIkzc-EbpId0jzn0wMXRLllhU - null null
+2026-11-23 09:35:40.226 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/MdmBilling.styles.css?v=e-9MUzXkAyVM6K9-a1XfroFwzTlB6J9FmCY92s4qBew - null null
+2026-11-23 09:35:40.226 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/css/auth.css?v=nCHZToDIyKyfTDQ1LzE3ThmkuSeoFSWgp0RRgmmm8Ng - null null
+2026-11-23 09:35:40.227 +05:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2026-11-23 09:35:40.229 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/lib/jquery/dist/jquery.min.js - null null
+2026-11-23 09:35:40.229 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-11-23 09:35:40.232 +05:00 [INF] The file /css/site.css was not modified
+2026-11-23 09:35:40.236 +05:00 [INF] The file /MdmBilling.styles.css was not modified
+2026-11-23 09:35:40.239 +05:00 [INF] The file /css/auth.css was not modified
+2026-11-23 09:35:40.240 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 16.3194ms
+2026-11-23 09:35:40.246 +05:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2026-11-23 09:35:40.249 +05:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-11-23 09:35:40.250 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/css/site.css?v=cIpxOFJa3hoplkD28SwIkzc-EbpId0jzn0wMXRLllhU - 304 null text/css 25.1943ms
+2026-11-23 09:35:40.252 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/MdmBilling.styles.css?v=e-9MUzXkAyVM6K9-a1XfroFwzTlB6J9FmCY92s4qBew - 304 null text/css 25.7059ms
+2026-11-23 09:35:40.253 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/css/auth.css?v=nCHZToDIyKyfTDQ1LzE3ThmkuSeoFSWgp0RRgmmm8Ng - 304 null text/css 26.8521ms
+2026-11-23 09:35:40.257 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-11-23 09:35:40.259 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/lib/jquery/dist/jquery.min.js - 304 null text/javascript 30.4649ms
+2026-11-23 09:35:40.262 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 33.6811ms
+2026-11-23 09:35:40.270 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2026-11-23 09:35:40.273 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - null null
+2026-11-23 09:35:40.280 +05:00 [INF] The file /js/site.js was not modified
+2026-11-23 09:35:40.292 +05:00 [INF] The file /lib/jquery-validation/dist/jquery.validate.min.js was not modified
+2026-11-23 09:35:40.297 +05:00 [INF] The file /lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js was not modified
+2026-11-23 09:35:40.298 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 41.0469ms
+2026-11-23 09:35:40.300 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/lib/jquery-validation/dist/jquery.validate.min.js - 304 null text/javascript 30.1291ms
+2026-11-23 09:35:40.303 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - 304 null text/javascript 29.9373ms
+2026-11-23 09:35:40.406 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/favicon.ico - null null
+2026-11-23 09:35:40.460 +05:00 [INF] The file /favicon.ico was not modified
+2026-11-23 09:35:40.466 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/favicon.ico - 304 null image/x-icon 59.985ms
+2026-11-23 09:35:41.009 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/lib/jquery/dist/jquery.min.js - null null
+2026-11-23 09:35:41.015 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-11-23 09:35:41.017 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-11-23 09:35:41.018 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2026-11-23 09:35:41.018 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - null null
+2026-11-23 09:35:41.021 +05:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2026-11-23 09:35:41.030 +05:00 [INF] The file /js/site.js was not modified
+2026-11-23 09:35:41.040 +05:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-11-23 09:35:41.040 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Account/Login?ReturnUrl=%2F - null null
+2026-11-23 09:35:41.043 +05:00 [INF] The file /lib/jquery-validation/dist/jquery.validate.min.js was not modified
+2026-11-23 09:35:41.049 +05:00 [INF] The file /lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js was not modified
+2026-11-23 09:35:41.051 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/lib/jquery/dist/jquery.min.js - 304 null text/javascript 42.1662ms
+2026-11-23 09:35:41.055 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 39.8719ms
+2026-11-23 09:35:41.057 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 39.1308ms
+2026-11-23 09:35:41.061 +05:00 [INF] Identity.Application was not authenticated. Failure message: Ticket expired
+2026-11-23 09:35:41.062 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/lib/jquery-validation/dist/jquery.validate.min.js - 304 null text/javascript 44.2659ms
+2026-11-23 09:35:41.063 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - 304 null text/javascript 45.3657ms
+2026-11-23 09:35:41.079 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.AccountController.Login (MdmBilling)'
+2026-11-23 09:35:41.090 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller MdmBilling.Controllers.AccountController (MdmBilling).
+2026-11-23 09:35:41.092 +05:00 [INF] Executing ViewResult, running view Login.
+2026-11-23 09:35:41.095 +05:00 [INF] Executed ViewResult - view Login executed in 3.585ms.
+2026-11-23 09:35:41.098 +05:00 [INF] Executed action MdmBilling.Controllers.AccountController.Login (MdmBilling) in 6.8683ms
+2026-11-23 09:35:41.105 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.AccountController.Login (MdmBilling)'
+2026-11-23 09:35:41.132 +05:00 [INF] HTTP GET /Account/Login responded 200 in 70.9870 ms
+2026-11-23 09:35:41.146 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 105.796ms
+2026-11-23 09:35:41.292 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Account/Login?ReturnUrl=%2F - null null
+2026-11-23 09:35:41.295 +05:00 [INF] Identity.Application was not authenticated. Failure message: Ticket expired
+2026-11-23 09:35:41.296 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.AccountController.Login (MdmBilling)'
+2026-11-23 09:35:41.298 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller MdmBilling.Controllers.AccountController (MdmBilling).
+2026-11-23 09:35:41.301 +05:00 [INF] Executing ViewResult, running view Login.
+2026-11-23 09:35:41.303 +05:00 [INF] Executed ViewResult - view Login executed in 2.1732ms.
+2026-11-23 09:35:41.306 +05:00 [INF] Executed action MdmBilling.Controllers.AccountController.Login (MdmBilling) in 5.8678ms
+2026-11-23 09:35:41.314 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.AccountController.Login (MdmBilling)'
+2026-11-23 09:35:41.316 +05:00 [INF] HTTP GET /Account/Login responded 200 in 21.0903 ms
+2026-11-23 09:35:41.319 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 27.0572ms
+2026-11-23 09:35:41.484 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Account/Login?ReturnUrl=%2F - null null
+2026-11-23 09:35:41.487 +05:00 [INF] Identity.Application was not authenticated. Failure message: Ticket expired
+2026-11-23 09:35:41.488 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.AccountController.Login (MdmBilling)'
+2026-11-23 09:35:41.490 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller MdmBilling.Controllers.AccountController (MdmBilling).
+2026-11-23 09:35:41.492 +05:00 [INF] Executing ViewResult, running view Login.
+2026-11-23 09:35:41.496 +05:00 [INF] Executed ViewResult - view Login executed in 3.6274ms.
+2026-11-23 09:35:41.498 +05:00 [INF] Executed action MdmBilling.Controllers.AccountController.Login (MdmBilling) in 5.6089ms
+2026-11-23 09:35:41.499 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.AccountController.Login (MdmBilling)'
+2026-11-23 09:35:41.502 +05:00 [INF] HTTP GET /Account/Login responded 200 in 15.0454 ms
+2026-11-23 09:35:41.513 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 29.2311ms
+2026-11-23 09:35:42.765 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5179/Account/Login?returnUrl=%2F - application/x-www-form-urlencoded 258
+2026-11-23 09:35:42.768 +05:00 [INF] Identity.Application was not authenticated. Failure message: Ticket expired
+2026-11-23 09:35:42.769 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.AccountController.Login (MdmBilling)'
+2026-11-23 09:35:42.771 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MdmBilling.ViewModels.LoginViewModel, System.String) on controller MdmBilling.Controllers.AccountController (MdmBilling).
+2026-11-23 09:35:44.280 +05:00 [INF] Executed DbCommand (23ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-11-23 09:35:44.369 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@user_Id='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @user_Id
+2026-11-23 09:35:44.378 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-11-23 09:35:44.387 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-11-23 09:35:44.393 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@role_Id='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @role_Id
+2026-11-23 09:35:44.396 +05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-11-23 09:35:44.402 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-11-23 09:35:44.409 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-11-23 09:35:44.423 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@p22='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p23='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime2), @p10='?' (DbType = Boolean), @p11='?' (DbType = DateTimeOffset), @p12='?' (DbType = Boolean), @p13='?' (Size = 256), @p14='?' (Size = 256), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (Size = 4000), @p20='?' (DbType = Boolean), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [CanDownloadReports] = @p1, [ConcurrencyStamp] = @p2, [CreatedAt] = @p3, [CreatedById] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [FullName] = @p7, [IsActive] = @p8, [LastLoginAt] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [MustChangePassword] = @p12, [NormalizedEmail] = @p13, [NormalizedUserName] = @p14, [Office] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [SecurityStamp] = @p19, [TwoFactorEnabled] = @p20, [UserName] = @p21
+OUTPUT 1
+WHERE [Id] = @p22 AND [ConcurrencyStamp] = @p23;
+2026-11-23 09:35:44.430 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [EntityId], [EntityName], [IpAddress], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-11-23 09:35:44.432 +05:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2026-11-23 09:35:44.435 +05:00 [INF] Executed action MdmBilling.Controllers.AccountController.Login (MdmBilling) in 1659.0416ms
+2026-11-23 09:35:44.436 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.AccountController.Login (MdmBilling)'
+2026-11-23 09:35:44.438 +05:00 [INF] HTTP POST /Account/Login responded 302 in 1670.3685 ms
+2026-11-23 09:35:44.440 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5179/Account/Login?returnUrl=%2F - 302 0 null 1675.7033ms
+2026-11-23 09:35:44.444 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/ - null null
+2026-11-23 09:35:44.448 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.Index (MdmBilling)'
+2026-11-23 09:35:44.449 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 09:35:44.454 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 09:35:44.460 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BillingBatches] AS [b]
+2026-11-23 09:35:44.466 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[Status] IN (0, 1)
+2026-11-23 09:35:44.473 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@since7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[QueuedAt] >= @since7
+2026-11-23 09:35:44.477 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@since7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[QueuedAt] >= @since7 AND [b].[Status] = 4
+2026-11-23 09:35:44.483 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b1].[Id] AS [RunId], [b1].[BatchId], [b0].[BatchNumber], [b1].[Status], [b1].[QueuedAt], [b1].[EndedAt], [b1].[TotalMeters], [b1].[OnlineCount], [b1].[OfflineCount], [b1].[DataAvailableCount], [b1].[DataMissingCount], [b1].[NotFoundCount], [b1].[NotCheckedCount], [b1].[ServersTotal], [b1].[ServersFailed]
+FROM (
+    SELECT TOP(@p) [b].[Id], [b].[BatchId], [b].[DataAvailableCount], [b].[DataMissingCount], [b].[EndedAt], [b].[NotCheckedCount], [b].[NotFoundCount], [b].[OfflineCount], [b].[OnlineCount], [b].[QueuedAt], [b].[ServersFailed], [b].[ServersTotal], [b].[Status], [b].[TotalMeters]
+    FROM [BatchProcessingRuns] AS [b]
+    ORDER BY [b].[Id] DESC
+) AS [b1]
+INNER JOIN [BillingBatches] AS [b0] ON [b1].[BatchId] = [b0].[Id]
+ORDER BY [b1].[Id] DESC
+2026-11-23 09:35:44.492 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@p) [e].[Timestamp] AS [Time], [e].[RunId], [s].[Name] AS [Server], [e].[Message]
+FROM [ErrorLogs] AS [e]
+LEFT JOIN [Servers] AS [s] ON [e].[ServerId] = [s].[Id]
+ORDER BY [e].[Id] DESC
+2026-11-23 09:35:44.495 +05:00 [INF] Executing ViewResult, running view Index.
+2026-11-23 09:35:44.499 +05:00 [INF] Executed ViewResult - view Index executed in 4.6287ms.
+2026-11-23 09:35:44.503 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.Index (MdmBilling) in 51.4355ms
+2026-11-23 09:35:44.505 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.Index (MdmBilling)'
+2026-11-23 09:35:44.507 +05:00 [INF] HTTP GET / responded 200 in 59.5815 ms
+2026-11-23 09:35:44.512 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/ - 200 null text/html; charset=utf-8 68.159ms
+2026-11-23 09:35:44.530 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/css/dashboard.css?v=bOKRoZYQMKFmPOf6GFNz5MmwiIqvw14FnFK29xWeme0 - null null
+2026-11-23 09:35:44.534 +05:00 [INF] The file /css/dashboard.css was not modified
+2026-11-23 09:35:44.535 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/css/dashboard.css?v=bOKRoZYQMKFmPOf6GFNz5MmwiIqvw14FnFK29xWeme0 - 304 null text/css 4.8446ms
+2026-11-23 09:35:44.547 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 09:35:44.551 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 09:35:44.552 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 09:35:44.556 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 09:35:44.568 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 09:35:54.593 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 09:35:54.596 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 09:35:54.598 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10042.869ms
+2026-11-23 09:35:54.599 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 09:35:54.600 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10049.6301 ms
+2026-11-23 09:35:54.602 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10054.9875ms
+2026-11-23 09:35:55.887 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Logs/Audit - null null
+2026-11-23 09:35:55.891 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.LogsController.Audit (MdmBilling)'
+2026-11-23 09:35:55.892 +05:00 [INF] Route matched with {action = "Audit", controller = "Logs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Audit(Int32) on controller MdmBilling.Controllers.LogsController (MdmBilling).
+2026-11-23 09:35:55.896 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 09:35:55.900 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AuditLogs] AS [a]
+2026-11-23 09:35:55.910 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@p='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Timestamp] AS [Time], CASE
+    WHEN [a0].[Id] IS NOT NULL THEN [a0].[FullName]
+    ELSE N''
+END AS [User], [a].[Action], [a].[EntityName] AS [Entity], [a].[EntityId], [a].[IpAddress] AS [Ip]
+FROM [AuditLogs] AS [a]
+LEFT JOIN [AspNetUsers] AS [a0] ON [a].[UserId] = [a0].[Id]
+ORDER BY [a].[Id] DESC
+OFFSET @p ROWS FETCH NEXT @p0 ROWS ONLY
+2026-11-23 09:35:55.914 +05:00 [INF] Executing ViewResult, running view Audit.
+2026-11-23 09:35:55.917 +05:00 [INF] Executed ViewResult - view Audit executed in 4.0757ms.
+2026-11-23 09:35:55.919 +05:00 [INF] Executed action MdmBilling.Controllers.LogsController.Audit (MdmBilling) in 24.5328ms
+2026-11-23 09:35:55.921 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.LogsController.Audit (MdmBilling)'
+2026-11-23 09:35:55.922 +05:00 [INF] HTTP GET /Logs/Audit responded 200 in 31.7315 ms
+2026-11-23 09:35:55.928 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Logs/Audit - 200 null text/html; charset=utf-8 40.7925ms
+2026-11-23 09:35:57.311 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/ - null null
+2026-11-23 09:35:57.315 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.Index (MdmBilling)'
+2026-11-23 09:35:57.316 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 09:35:57.321 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 09:35:57.324 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BillingBatches] AS [b]
+2026-11-23 09:35:57.327 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[Status] IN (0, 1)
+2026-11-23 09:35:57.331 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[QueuedAt] >= @since7
+2026-11-23 09:35:57.334 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[QueuedAt] >= @since7 AND [b].[Status] = 4
+2026-11-23 09:35:57.339 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b1].[Id] AS [RunId], [b1].[BatchId], [b0].[BatchNumber], [b1].[Status], [b1].[QueuedAt], [b1].[EndedAt], [b1].[TotalMeters], [b1].[OnlineCount], [b1].[OfflineCount], [b1].[DataAvailableCount], [b1].[DataMissingCount], [b1].[NotFoundCount], [b1].[NotCheckedCount], [b1].[ServersTotal], [b1].[ServersFailed]
+FROM (
+    SELECT TOP(@p) [b].[Id], [b].[BatchId], [b].[DataAvailableCount], [b].[DataMissingCount], [b].[EndedAt], [b].[NotCheckedCount], [b].[NotFoundCount], [b].[OfflineCount], [b].[OnlineCount], [b].[QueuedAt], [b].[ServersFailed], [b].[ServersTotal], [b].[Status], [b].[TotalMeters]
+    FROM [BatchProcessingRuns] AS [b]
+    ORDER BY [b].[Id] DESC
+) AS [b1]
+INNER JOIN [BillingBatches] AS [b0] ON [b1].[BatchId] = [b0].[Id]
+ORDER BY [b1].[Id] DESC
+2026-11-23 09:35:57.342 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@p) [e].[Timestamp] AS [Time], [e].[RunId], [s].[Name] AS [Server], [e].[Message]
+FROM [ErrorLogs] AS [e]
+LEFT JOIN [Servers] AS [s] ON [e].[ServerId] = [s].[Id]
+ORDER BY [e].[Id] DESC
+2026-11-23 09:35:57.345 +05:00 [INF] Executing ViewResult, running view Index.
+2026-11-23 09:35:57.348 +05:00 [INF] Executed ViewResult - view Index executed in 2.3319ms.
+2026-11-23 09:35:57.350 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.Index (MdmBilling) in 30.4163ms
+2026-11-23 09:35:57.353 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.Index (MdmBilling)'
+2026-11-23 09:35:57.355 +05:00 [INF] HTTP GET / responded 200 in 39.8648 ms
+2026-11-23 09:35:57.359 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/ - 200 null text/html; charset=utf-8 46.5024ms
+2026-11-23 09:35:57.385 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 09:35:57.388 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 09:35:57.390 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 09:35:57.394 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 09:35:57.399 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 09:35:57.404 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 09:35:57.410 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 09:35:57.412 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 19.3212ms
+2026-11-23 09:35:57.414 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 09:35:57.416 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 27.5501 ms
+2026-11-23 09:35:57.421 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 36.063ms
+2026-11-23 09:36:42.167 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=true - null null
+2026-11-23 09:36:42.170 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 09:36:42.172 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 09:36:42.176 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 09:36:42.180 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 09:36:52.199 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 09:36:52.203 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 09:36:52.204 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10029.369ms
+2026-11-23 09:36:52.206 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 09:36:52.207 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10037.0790 ms
+2026-11-23 09:36:52.211 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=true - 200 null application/json; charset=utf-8 10043.8898ms
+2026-11-23 10:01:11.579 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/ - null null
+2026-11-23 10:01:11.584 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.Index (MdmBilling)'
+2026-11-23 10:01:11.585 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:01:12.900 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:01:12.906 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BillingBatches] AS [b]
+2026-11-23 10:01:12.914 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[Status] IN (0, 1)
+2026-11-23 10:01:12.919 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@since7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[QueuedAt] >= @since7
+2026-11-23 10:01:12.926 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@since7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[QueuedAt] >= @since7 AND [b].[Status] = 4
+2026-11-23 10:01:12.933 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b1].[Id] AS [RunId], [b1].[BatchId], [b0].[BatchNumber], [b1].[Status], [b1].[QueuedAt], [b1].[EndedAt], [b1].[TotalMeters], [b1].[OnlineCount], [b1].[OfflineCount], [b1].[DataAvailableCount], [b1].[DataMissingCount], [b1].[NotFoundCount], [b1].[NotCheckedCount], [b1].[ServersTotal], [b1].[ServersFailed]
+FROM (
+    SELECT TOP(@p) [b].[Id], [b].[BatchId], [b].[DataAvailableCount], [b].[DataMissingCount], [b].[EndedAt], [b].[NotCheckedCount], [b].[NotFoundCount], [b].[OfflineCount], [b].[OnlineCount], [b].[QueuedAt], [b].[ServersFailed], [b].[ServersTotal], [b].[Status], [b].[TotalMeters]
+    FROM [BatchProcessingRuns] AS [b]
+    ORDER BY [b].[Id] DESC
+) AS [b1]
+INNER JOIN [BillingBatches] AS [b0] ON [b1].[BatchId] = [b0].[Id]
+ORDER BY [b1].[Id] DESC
+2026-11-23 10:01:12.940 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@p) [e].[Timestamp] AS [Time], [e].[RunId], [s].[Name] AS [Server], [e].[Message]
+FROM [ErrorLogs] AS [e]
+LEFT JOIN [Servers] AS [s] ON [e].[ServerId] = [s].[Id]
+ORDER BY [e].[Id] DESC
+2026-11-23 10:01:12.946 +05:00 [INF] Executing ViewResult, running view Index.
+2026-11-23 10:01:12.948 +05:00 [INF] Executed ViewResult - view Index executed in 3.6048ms.
+2026-11-23 10:01:12.950 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.Index (MdmBilling) in 1363.0209ms
+2026-11-23 10:01:12.952 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.Index (MdmBilling)'
+2026-11-23 10:01:12.956 +05:00 [INF] HTTP GET / responded 200 in 1372.7363 ms
+2026-11-23 10:01:12.978 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/ - 200 null text/html; charset=utf-8 1398.3345ms
+2026-11-23 10:01:13.735 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:01:13.753 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:01:13.767 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:01:13.779 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:01:13.796 +05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:01:23.809 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:01:23.812 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:01:23.814 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10037.2648ms
+2026-11-23 10:01:23.816 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:01:23.817 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10064.1417 ms
+2026-11-23 10:01:23.819 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10084.0519ms
+2026-11-23 10:01:44.210 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:01:44.214 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:01:44.215 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:01:44.219 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:01:44.221 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:01:44.226 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:01:44.229 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:01:44.230 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 12.7847ms
+2026-11-23 10:01:44.232 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:01:44.234 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 19.8873 ms
+2026-11-23 10:01:44.236 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 25.9846ms
+2026-11-23 10:02:14.211 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:02:14.215 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:02:14.216 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:02:14.220 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:02:14.223 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:02:24.241 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:02:24.243 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:02:24.245 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10026.4893ms
+2026-11-23 10:02:24.247 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:02:24.248 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10033.8994 ms
+2026-11-23 10:02:24.250 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10038.809ms
+2026-11-23 10:02:44.211 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:02:44.214 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:02:44.216 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:02:44.219 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:02:44.223 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:02:44.226 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:02:44.230 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:02:44.231 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 13.3938ms
+2026-11-23 10:02:44.233 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:02:44.235 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 20.4618 ms
+2026-11-23 10:02:44.237 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 25.893ms
+2026-11-23 10:03:14.218 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:03:14.221 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:03:14.222 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:03:14.225 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:03:14.228 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:03:24.238 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:03:24.241 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:03:24.242 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10017.9942ms
+2026-11-23 10:03:24.244 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:03:24.245 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10024.1624 ms
+2026-11-23 10:03:24.248 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10030.3507ms
+2026-11-23 10:03:44.212 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:03:44.216 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:03:44.217 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:03:44.220 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:03:44.223 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:03:44.227 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:03:44.231 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:03:44.233 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 13.7821ms
+2026-11-23 10:03:44.236 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:03:44.237 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 21.2915 ms
+2026-11-23 10:03:44.240 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 27.2219ms
+2026-11-23 10:04:14.212 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:04:14.215 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:04:14.217 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:04:14.220 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:04:14.222 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:04:24.246 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:04:24.250 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:04:24.251 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10032.627ms
+2026-11-23 10:04:24.253 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:04:24.254 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10038.9506 ms
+2026-11-23 10:04:24.257 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10044.999ms
+2026-11-23 10:04:44.219 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:04:44.223 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:04:44.224 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:04:44.228 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:04:44.231 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:04:44.238 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:04:44.244 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:04:44.245 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 18.8579ms
+2026-11-23 10:04:44.248 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:04:44.249 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 26.7206 ms
+2026-11-23 10:04:44.251 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 31.81ms
+2026-11-23 10:05:14.224 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:05:14.227 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:05:14.228 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:05:14.232 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:05:14.235 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:05:24.254 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:05:24.257 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:05:24.258 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10028.2844ms
+2026-11-23 10:05:24.260 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:05:24.261 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10034.7832 ms
+2026-11-23 10:05:24.264 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10039.9403ms
+2026-11-23 10:05:44.214 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:05:44.218 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:05:44.219 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:05:44.222 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:05:44.226 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:05:44.230 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:05:44.234 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:05:44.235 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 14.3695ms
+2026-11-23 10:05:44.237 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:05:44.238 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 20.8729 ms
+2026-11-23 10:05:44.240 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 26.1693ms
+2026-11-23 10:07:10.223 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:07:10.227 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:07:10.228 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:07:10.233 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:07:10.236 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:07:20.249 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:07:20.252 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:07:20.254 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10022.8613ms
+2026-11-23 10:07:20.255 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:07:20.257 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10030.1718 ms
+2026-11-23 10:07:20.259 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10036.5246ms
+2026-11-23 10:08:10.218 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:08:10.222 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:08:10.223 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:08:10.227 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:08:10.231 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:08:20.245 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:08:20.248 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:08:20.249 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10023.9138ms
+2026-11-23 10:08:20.251 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:08:20.252 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10031.0625 ms
+2026-11-23 10:08:20.255 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10037.6531ms
+2026-11-23 10:08:52.660 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:08:52.664 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:08:52.665 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:08:52.669 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:08:52.673 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:08:54.163 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/ - null null
+2026-11-23 10:08:54.167 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.Index (MdmBilling)'
+2026-11-23 10:08:54.168 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:08:54.172 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:08:54.175 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BillingBatches] AS [b]
+2026-11-23 10:08:54.179 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[Status] IN (0, 1)
+2026-11-23 10:08:54.185 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[QueuedAt] >= @since7
+2026-11-23 10:08:54.188 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BatchProcessingRuns] AS [b]
+WHERE [b].[QueuedAt] >= @since7 AND [b].[Status] = 4
+2026-11-23 10:08:54.191 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b1].[Id] AS [RunId], [b1].[BatchId], [b0].[BatchNumber], [b1].[Status], [b1].[QueuedAt], [b1].[EndedAt], [b1].[TotalMeters], [b1].[OnlineCount], [b1].[OfflineCount], [b1].[DataAvailableCount], [b1].[DataMissingCount], [b1].[NotFoundCount], [b1].[NotCheckedCount], [b1].[ServersTotal], [b1].[ServersFailed]
+FROM (
+    SELECT TOP(@p) [b].[Id], [b].[BatchId], [b].[DataAvailableCount], [b].[DataMissingCount], [b].[EndedAt], [b].[NotCheckedCount], [b].[NotFoundCount], [b].[OfflineCount], [b].[OnlineCount], [b].[QueuedAt], [b].[ServersFailed], [b].[ServersTotal], [b].[Status], [b].[TotalMeters]
+    FROM [BatchProcessingRuns] AS [b]
+    ORDER BY [b].[Id] DESC
+) AS [b1]
+INNER JOIN [BillingBatches] AS [b0] ON [b1].[BatchId] = [b0].[Id]
+ORDER BY [b1].[Id] DESC
+2026-11-23 10:08:54.196 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@p) [e].[Timestamp] AS [Time], [e].[RunId], [s].[Name] AS [Server], [e].[Message]
+FROM [ErrorLogs] AS [e]
+LEFT JOIN [Servers] AS [s] ON [e].[ServerId] = [s].[Id]
+ORDER BY [e].[Id] DESC
+2026-11-23 10:08:54.199 +05:00 [INF] Executing ViewResult, running view Index.
+2026-11-23 10:08:54.202 +05:00 [INF] Executed ViewResult - view Index executed in 3.2365ms.
+2026-11-23 10:08:54.204 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.Index (MdmBilling) in 32.8507ms
+2026-11-23 10:08:54.205 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.Index (MdmBilling)'
+2026-11-23 10:08:54.207 +05:00 [INF] HTTP GET / responded 200 in 40.1285 ms
+2026-11-23 10:08:54.215 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 1547.4314ms
+2026-11-23 10:08:54.220 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/ - 200 null text/html; charset=utf-8 56.7461ms
+2026-11-23 10:08:54.225 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:08:54.232 +05:00 [ERR] HTTP GET /Home/ServerHealth responded 500 in 1568.9406 ms
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MdmBilling.Services.DashboardService.GetServerHealthAsync(Boolean refresh, CancellationToken ct) in D:\MdmBilling\Services\DashboardService.cs:line 124
+   at MdmBilling.Controllers.HomeController.ServerHealth(Boolean refresh) in D:\MdmBilling\Controllers\HomeController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-23 10:08:54.252 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 499 null null 1591.7729ms
+2026-11-23 10:08:54.307 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:08:54.314 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:08:54.316 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:08:54.322 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:08:54.325 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:08:54.329 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:08:54.332 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:08:54.335 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 14.0341ms
+2026-11-23 10:08:54.336 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:08:54.338 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 23.4869 ms
+2026-11-23 10:08:54.340 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 32.8862ms
+2026-11-23 10:09:25.219 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:09:25.223 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:09:25.225 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:09:25.229 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:09:25.231 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:09:35.247 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:09:35.250 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:09:35.252 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10024.1606ms
+2026-11-23 10:09:35.253 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:09:35.255 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10031.7790 ms
+2026-11-23 10:09:35.257 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10037.6204ms
+2026-11-23 10:09:55.215 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:09:55.219 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:09:55.220 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:09:55.223 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:09:55.227 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:09:55.231 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:09:55.234 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:09:55.235 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 12.6957ms
+2026-11-23 10:09:55.236 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:09:55.238 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 19.9344 ms
+2026-11-23 10:09:55.240 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 25.7218ms
+2026-11-23 10:10:25.222 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:10:25.226 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:10:25.228 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:10:25.231 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:10:25.234 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:10:35.252 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:10:35.255 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:10:35.256 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10026.743ms
+2026-11-23 10:10:35.258 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:10:35.259 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10033.6931 ms
+2026-11-23 10:10:35.262 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10039.6105ms
+2026-11-23 10:10:55.216 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:10:55.220 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:10:55.221 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:10:55.224 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:10:55.227 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:10:55.231 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:10:55.234 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:10:55.235 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 12.6735ms
+2026-11-23 10:10:55.237 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:10:55.238 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 19.0753 ms
+2026-11-23 10:10:55.241 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 24.8632ms
+2026-11-23 10:11:25.211 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:11:25.215 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:11:25.217 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:11:25.220 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:11:25.223 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:11:35.240 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:11:35.243 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:11:35.245 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10025.8709ms
+2026-11-23 10:11:35.246 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:11:35.247 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10032.5658 ms
+2026-11-23 10:11:35.250 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10038.676ms
+2026-11-23 10:11:55.218 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:11:55.222 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:11:55.223 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:11:55.226 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:11:55.229 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:11:55.233 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:11:55.236 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:11:55.238 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 12.2928ms
+2026-11-23 10:11:55.239 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:11:55.241 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 19.2060 ms
+2026-11-23 10:11:55.244 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 25.2173ms
+2026-11-23 10:13:10.225 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:13:10.230 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:13:10.231 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:13:10.238 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:13:10.249 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:13:20.257 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:13:20.260 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:13:20.262 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10025.4779ms
+2026-11-23 10:13:20.263 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:13:20.264 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10035.1399 ms
+2026-11-23 10:13:20.266 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10040.9425ms
+2026-11-23 10:14:10.235 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:14:10.239 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:14:10.240 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:14:10.244 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:14:10.248 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:14:20.258 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:14:20.262 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:14:20.263 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10020.1809ms
+2026-11-23 10:14:20.265 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:14:20.266 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10027.1021 ms
+2026-11-23 10:14:20.268 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10032.3229ms
+2026-11-23 10:15:10.225 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:15:10.228 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:15:10.230 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:15:10.234 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:15:10.238 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:15:20.247 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:15:20.250 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:15:20.251 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10019.4615ms
+2026-11-23 10:15:20.253 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:15:20.255 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10026.7131 ms
+2026-11-23 10:15:20.257 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10032.0441ms
+2026-11-23 10:16:10.219 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:16:10.222 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:16:10.224 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:16:10.228 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:16:10.231 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:16:20.229 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:16:20.233 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:16:20.234 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10008.0308ms
+2026-11-23 10:16:20.236 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:16:20.237 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10015.4253 ms
+2026-11-23 10:16:20.239 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10020.6226ms
+2026-11-23 10:17:10.225 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:17:10.230 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:17:10.232 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:17:10.235 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:17:10.239 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:17:20.256 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:17:20.259 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:17:20.260 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10026.1699ms
+2026-11-23 10:17:20.262 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:17:20.263 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10033.2774 ms
+2026-11-23 10:17:20.265 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10040.2997ms
+2026-11-23 10:18:10.229 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:18:10.232 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:18:10.234 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:18:10.238 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:18:10.241 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:18:20.248 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:18:20.252 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:18:20.253 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10016.8669ms
+2026-11-23 10:18:20.255 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:18:20.256 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10024.0029 ms
+2026-11-23 10:18:20.259 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10030.4775ms
+2026-11-23 10:19:10.214 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:19:10.218 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:19:10.219 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:19:10.223 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:19:10.227 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:19:20.237 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:19:20.241 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:19:20.242 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10020.5743ms
+2026-11-23 10:19:20.243 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:19:20.245 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10027.0734 ms
+2026-11-23 10:19:20.246 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10031.8498ms
+2026-11-23 10:20:10.224 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:20:10.228 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:20:10.229 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:20:10.233 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:20:10.237 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:20:20.229 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:20:20.232 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:20:20.234 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10002.3067ms
+2026-11-23 10:20:20.236 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:20:20.237 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10009.4981 ms
+2026-11-23 10:20:20.239 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10015.0784ms
+2026-11-23 10:21:10.218 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:21:10.221 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:21:10.223 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:21:10.226 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:21:10.230 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:21:20.228 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:21:20.231 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:21:20.232 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10007.1844ms
+2026-11-23 10:21:20.234 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:21:20.235 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10014.1297 ms
+2026-11-23 10:21:20.238 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10019.7662ms
+2026-11-23 10:22:10.226 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:22:10.231 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:22:10.233 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:22:10.236 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:22:10.241 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:22:20.258 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:22:20.261 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:22:20.262 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10027.379ms
+2026-11-23 10:22:20.264 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:22:20.265 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10034.7482 ms
+2026-11-23 10:22:20.267 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10041.1917ms
+2026-11-23 10:23:10.226 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:23:10.231 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:23:10.232 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:23:10.236 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:23:10.240 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:23:20.244 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:23:20.247 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:23:20.248 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10013.3363ms
+2026-11-23 10:23:20.250 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:23:20.251 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10020.6869 ms
+2026-11-23 10:23:20.254 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10027.3694ms
+2026-11-23 10:24:10.283 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:24:10.287 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:24:10.288 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:24:10.296 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:24:10.304 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:24:20.314 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:24:20.317 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:24:20.319 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10024.0918ms
+2026-11-23 10:24:20.320 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:24:20.321 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10034.8869 ms
+2026-11-23 10:24:20.323 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10039.5086ms
+2026-11-23 10:25:10.232 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:25:10.235 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:25:10.236 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:25:10.240 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:25:10.243 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:25:20.273 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:25:20.277 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:25:20.278 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10039.7835ms
+2026-11-23 10:25:20.280 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:25:20.281 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10046.3772 ms
+2026-11-23 10:25:20.284 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10051.7352ms
+2026-11-23 10:26:10.229 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:26:10.234 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:26:10.235 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:26:10.239 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:26:10.243 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:26:20.260 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:26:20.263 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:26:20.265 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10026.8795ms
+2026-11-23 10:26:20.266 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:26:20.267 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10034.1840 ms
+2026-11-23 10:26:20.269 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10040.0657ms
+2026-11-23 10:27:10.220 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:27:10.223 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:27:10.225 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:27:10.228 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:27:10.232 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:27:20.241 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:27:20.244 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:27:20.245 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10018.2052ms
+2026-11-23 10:27:20.247 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:27:20.248 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10025.2745 ms
+2026-11-23 10:27:20.250 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10030.4509ms
+2026-11-23 10:28:10.218 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:28:10.221 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:28:10.223 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:28:10.226 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:28:10.229 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:28:20.243 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:28:20.246 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:28:20.247 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10022.3209ms
+2026-11-23 10:28:20.249 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:28:20.250 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10029.4405 ms
+2026-11-23 10:28:20.253 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10034.6822ms
+2026-11-23 10:28:35.809 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:28:35.820 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:28:35.821 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:28:35.824 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:28:35.827 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:28:35.830 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:28:35.833 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:28:35.835 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 12.1484ms
+2026-11-23 10:28:35.837 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:28:35.838 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 18.3503 ms
+2026-11-23 10:28:35.840 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 31.251ms
+2026-11-23 10:28:55.216 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:28:55.220 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:28:55.221 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:28:55.225 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:28:55.227 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:29:05.240 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:29:05.244 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:29:05.245 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10021.3446ms
+2026-11-23 10:29:05.247 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:29:05.248 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10027.7952 ms
+2026-11-23 10:29:05.250 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10033.4471ms
+2026-11-23 10:29:25.214 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:29:25.217 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:29:25.218 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:29:25.222 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:29:25.225 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:29:25.229 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:29:25.231 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:29:25.232 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 11.6173ms
+2026-11-23 10:29:25.234 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:29:25.235 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 18.5434 ms
+2026-11-23 10:29:25.238 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 24.4844ms
+2026-11-23 10:30:10.224 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:30:10.227 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:30:10.228 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:30:10.232 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:30:10.235 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:30:20.246 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:30:20.249 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:30:20.250 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10019.8622ms
+2026-11-23 10:30:20.252 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:30:20.253 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10026.3255 ms
+2026-11-23 10:30:20.255 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10031.2158ms
+2026-11-23 10:31:10.229 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:31:10.232 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:31:10.233 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:31:10.236 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:31:10.240 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:31:20.255 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:31:20.258 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:31:20.260 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10024.9078ms
+2026-11-23 10:31:20.262 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:31:20.263 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10031.1929 ms
+2026-11-23 10:31:20.265 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10035.8149ms
+2026-11-23 10:32:10.227 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:32:10.231 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:32:10.232 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:32:10.236 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:32:10.239 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:32:20.258 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:32:20.261 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:32:20.263 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10028.2528ms
+2026-11-23 10:32:20.264 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:32:20.266 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10035.0840 ms
+2026-11-23 10:32:20.268 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10041.0695ms
+2026-11-23 10:33:10.228 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:33:10.232 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:33:10.234 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:33:10.240 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:33:10.244 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:33:20.256 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:33:20.259 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:33:20.261 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10023.6974ms
+2026-11-23 10:33:20.264 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:33:20.265 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10033.8658 ms
+2026-11-23 10:33:20.267 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10039.1041ms
+2026-11-23 10:34:10.222 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - null null
+2026-11-23 10:34:10.226 +05:00 [INF] Executing endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:34:10.227 +05:00 [INF] Route matched with {action = "ServerHealth", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ServerHealth(Boolean) on controller MdmBilling.Controllers.HomeController (MdmBilling).
+2026-11-23 10:34:10.235 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[CanDownloadReports], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[CreatedById], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LastLoginAt], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MustChangePassword], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Office], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-11-23 10:34:10.243 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupId], [s].[IpAddress], [s].[IsActive], [s].[Name], [s0].[Id], [s0].[Name], [d].[Id], [d].[DatabaseName], [d].[DbEngine], [d].[EncryptedPassword], [d].[Host], [d].[IsActive], [d].[Port], [d].[ServerId], [d].[Username]
+FROM [Servers] AS [s]
+LEFT JOIN [ServerGroups] AS [s0] ON [s].[GroupId] = [s0].[Id]
+LEFT JOIN [DatabaseConnections] AS [d] ON [s].[Id] = [d].[ServerId]
+ORDER BY [s].[Name], [s].[Id], [s0].[Id]
+2026-11-23 10:34:20.259 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@since30='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServerId], [s].[RunId], [s].[State], [s].[DurationMs], [s].[ErrorMessage], [b].[QueuedAt] AS [Queued], [b].[EndedAt] AS [Ended]
+FROM [ServerRunStatuses] AS [s]
+INNER JOIN [BatchProcessingRuns] AS [b] ON [s].[RunId] = [b].[Id]
+WHERE [b].[QueuedAt] >= @since30
+2026-11-23 10:34:20.263 +05:00 [INF] Executing JsonResult, writing value of type 'MdmBilling.ViewModels.ServerHealthResult'.
+2026-11-23 10:34:20.264 +05:00 [INF] Executed action MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling) in 10035.0566ms
+2026-11-23 10:34:20.266 +05:00 [INF] Executed endpoint 'MdmBilling.Controllers.HomeController.ServerHealth (MdmBilling)'
+2026-11-23 10:34:20.267 +05:00 [INF] HTTP GET /Home/ServerHealth responded 200 in 10041.6087 ms
+2026-11-23 10:34:20.269 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/Home/ServerHealth?refresh=false - 200 null application/json; charset=utf-8 10047.0185ms
+2026-11-23 10:34:35.915 +05:00 [INF] Application is shutting down...

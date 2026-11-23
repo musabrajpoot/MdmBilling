@@ -312,3 +312,5 @@ D:\MdmBilling\obj\Debug\net10.0\refint\MdmBilling.dll
 D:\MdmBilling\obj\Debug\net10.0\MdmBilling.pdb
 D:\MdmBilling\obj\Debug\net10.0\MdmBilling.genruntimeconfig.cache
 D:\MdmBilling\obj\Debug\net10.0\ref\MdmBilling.dll
+D:\MdmBilling\obj\Debug\net10.0\MdmBilling.sourcelink.json
+D:\MdmBilling\obj\Debug\net10.0\compressed\icx4yewf2w-{0}-4ejxm7rkwi-4ejxm7rkwi.gz

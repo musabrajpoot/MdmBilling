@@ -122,6 +122,8 @@ builder.Services.AddScoped<
 
 builder.Services.Configure<EmailOptions>(builder.Configuration.GetSection("Email"));
 builder.Services.AddScoped<EmailService>();
+builder.Services.AddSingleton<ServerHealthCache>();
+builder.Services.AddScoped<DashboardService>();
 
 
 // MVC configuration

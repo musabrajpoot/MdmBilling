@@ -1,0 +1,315 @@
+/* wwwroot/css/dashboard.css  - Home dashboard. Loaded only on the Home page. */
+
+.dash-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red, #d91c23);
+}
+.dash-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.dash-head h2 {
+  margin: 4px 0 0;
+}
+.dash-date {
+  color: var(--mut, #667085);
+  font-weight: 500;
+}
+.sub {
+  font-size: 12px;
+  color: var(--mut, #667085);
+}
+
+/* ---------- Hero panel ---------- */
+.dash-hero {
+  background: linear-gradient(#fff, #fff7f7);
+  border: 1px solid #f6dcdc;
+  border-radius: 22px;
+  padding: 26px;
+  margin-bottom: 20px;
+}
+.dash-hero-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.dash-hero h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 6px 0 4px;
+  letter-spacing: -0.01em;
+}
+.dash-hero p {
+  color: var(--mut, #667085);
+  margin: 0;
+  max-width: 560px;
+}
+.dash-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.dash-chip {
+  border: 1px solid #f3c4c6;
+  border-radius: 12px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--red, #d91c23);
+  background: #fff;
+}
+.dash-auto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--mut, #667085);
+  margin: 0;
+}
+.dash-auto input {
+  accent-color: var(--red, #d91c23);
+}
+
+/* ---------- KPI cards ---------- */
+.dash-kpis {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+.dash-kpis.four {
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px 0;
+}
+.dash-kpi {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--line, #eceef2);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+.dash-kpi i {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--red-l, #fdecec);
+  color: var(--red, #d91c23);
+  display: grid;
+  place-items: center;
+  font-style: normal;
+  font-size: 20px;
+  flex: none;
+}
+.dash-kpi small {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--mut, #667085);
+}
+.dash-kpi strong {
+  display: block;
+  font-size: 28px;
+  line-height: 1.15;
+  margin: 2px 0;
+}
+.dash-kpi span {
+  font-size: 12px;
+  color: var(--mut, #667085);
+}
+.dash-kpi.ok i {
+  background: #e7f8ee;
+  color: #0a7a3b;
+}
+.dash-kpi.bad i {
+  background: #fdecec;
+  color: #b3141b;
+}
+.dash-kpi.mute i {
+  background: #f2f4f7;
+  color: #667085;
+}
+
+/* ---------- Server map (tiles) ---------- */
+.dash-map {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 6px;
+}
+.dash-node {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid var(--line, #eceef2);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+.dash-node b {
+  display: block;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 110px;
+}
+.dash-node small {
+  font-size: 12px;
+  color: var(--mut, #667085);
+}
+.dash-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #98a2b3;
+  flex: none;
+}
+.dash-node.online .dash-dot {
+  background: #12a150;
+  box-shadow: 0 0 0 4px #e7f8ee;
+}
+.dash-node.offline {
+  border-color: #f3c4c6;
+  background: #fffafa;
+}
+.dash-node.offline .dash-dot {
+  background: #d91c23;
+  box-shadow: 0 0 0 4px #fdecec;
+}
+.dash-node.unknown .dash-dot {
+  background: #f59e0b;
+}
+
+/* ---------- Cards and tables ---------- */
+.dash-card {
+  background: #fff;
+  border: 1px solid var(--line, #eceef2);
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+.dash-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+.dash-card-head h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 4px 0 0;
+}
+.dash-cols {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 20px;
+}
+.dash-card .table {
+  box-shadow: none;
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.dash-table td,
+.dash-table th {
+  vertical-align: middle;
+}
+.dash-err {
+  max-width: 260px;
+  font-size: 12px;
+  color: #b3141b;
+  word-break: break-word;
+}
+
+/* ---------- Pills, latency, bars ---------- */
+.dash-pill {
+  display: inline-block;
+  border-radius: 99px;
+  padding: 3px 11px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.dash-pill.online {
+  background: #e7f8ee;
+  color: #0a7a3b;
+}
+.dash-pill.offline {
+  background: #fdecec;
+  color: #b3141b;
+}
+.dash-pill.inactive {
+  background: #f2f4f7;
+  color: #475467;
+}
+.dash-pill.unknown {
+  background: #fff4dc;
+  color: #9a6200;
+}
+.dash-lat {
+  font-weight: 700;
+}
+.dash-lat.good {
+  color: #0a7a3b;
+}
+.dash-lat.warn {
+  color: #9a6200;
+}
+.dash-lat.bad {
+  color: #b3141b;
+}
+.dash-bar {
+  height: 6px;
+  border-radius: 99px;
+  background: #fdecec;
+  margin-top: 5px;
+  min-width: 90px;
+  overflow: hidden;
+}
+.dash-bar i {
+  display: block;
+  height: 100%;
+  background: #12a150;
+  border-radius: 99px;
+}
+
+/* ---------- Latest run numbers ---------- */
+.dash-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 14px 0;
+}
+.dash-numbers small {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mut, #667085);
+}
+.dash-numbers b {
+  font-size: 22px;
+}
+
+@media (max-width: 1100px) {
+  .dash-kpis,
+  .dash-kpis.four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dash-cols {
+    grid-template-columns: 1fr;
+  }
+}
